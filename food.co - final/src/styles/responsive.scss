@@ -1,0 +1,240 @@
+@media screen and (max-width: 320px) {
+  .hero {
+    background-image: url('../public/heros/hero-image_2-small.jpg');
+    height: 200px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .restaurant__details {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .reviews {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .app-bar {
+    padding: 8px 16px;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
+
+  .explore {
+    padding: 0.5rem 0.5rem;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .restaurant__poster{
+    height: 40vh;
+    width: auto;
+  }
+
+  .restaurant__overview {
+    margin: 0 10px 10px 10px;
+    padding: 20px;
+  }
+
+  .restaurant__menu {
+    padding: 10px;
+  }
+
+  .review-card {
+    width: 160px;
+    height: auto;
+  }
+
+  .review-card .review-text {
+    font-size: 12px;
+  }
+
+  .restaurant__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    object-fit: cover;
+    background-image: url('../public/heros/hero-image_2-small.jpg');
+    height: 300px;
+  }
+  
+
+  .detail_box {
+    padding: 0 20px 20px 20px;
+  }
+
+  .menu-container {
+    width: auto;
+  }
+  .hero-text h1 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .hero {
+    background-image: url('../public/heros/hero-image_2-medium.jpg');
+    height: 50vh;
+  }
+  .app-bar .app-bar__brand {
+    justify-content: center;
+  }
+  .detail_box {
+    padding: 0 30px 30px 30px;
+  }
+
+  .restaurant__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    gap: 20px;
+  }
+
+  .menu-container {
+    width: auto; 
+  }
+
+  .restaurant__details {
+    grid-template-rows: 120px 120px;
+  }
+  
+}
+
+@media screen and (min-width: 650px) {
+    .hero {
+      background-image: url('../public/heros/hero-image_2-medium.jpg');
+      height: 50vh;
+    }
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      justify-content: space-between;
+      padding: 8px 32px;
+      position: sticky;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      width: 120px;
+      text-align: center;
+    }
+
+    .detail_box {
+      padding: 0 50px 50px 50px;
+    }
+
+    .restaurant__details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(2, 100px));
+      grid-template-rows: auto;
+    }
+    .restaurants {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .app-bar__navigation ul li a {
+      background-color: var(--primary);
+      color: #fff; 
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 8px;
+    }
+  
+    .app-bar__navigation ul li a:hover {
+      background-color: var(--list);
+      color: var(--primary);
+      border-radius: 8px;
+    }
+
+    .restaurant__title {
+      font-size: 48px;
+    }
+  }
+   
+  @media screen and (min-width: 800px) and (max-width:849px){
+    .detail_box {
+      padding: 0 50px 50px 50px;
+    }
+
+    .restaurant__details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    }
+
+    .restaurants {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .restaurant__title {
+      font-size: 48px;
+    }
+  }
+   
+  @media screen and (min-width: 850px) {
+    .hero {
+      background-image: url('../public/heros/hero-image_2-large.jpg');
+      height: 50vh;
+    }
+    .restaurants {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .restaurant__details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    }
+
+    .restaurant__title {
+      font-size: 48px;
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .restaurants {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .detail_box {
+      padding: 0 200px 0 200px;
+    }
+
+    .restaurant__title {
+      font-size: 54px;
+    }
+
+    .hero-text h1 {
+      font-size: 54px;
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(400px, 1fr);
+    }
+  }
